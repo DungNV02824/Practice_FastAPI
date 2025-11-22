@@ -20,3 +20,8 @@ def custom_route():
 @app.delete("/items/{item_id}")
 def delete_item(item_id: int):
     return {"message": f"Item {item_id} deleted"}
+
+
+@app.put("/items/{item_id}")
+def update_item(item_id: int, item: dict):
+    return {"item_id": item_id, "item": item}   
