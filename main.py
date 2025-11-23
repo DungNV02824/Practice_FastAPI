@@ -13,3 +13,7 @@ def home():
 @app.get("/b")
 def home():
     return {"Nhanh b!"}
+
+@app.get("/c")
+def home():
+    return {"Nhanh c!"}
