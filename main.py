@@ -6,3 +6,6 @@ app = FastAPI()
 def home():
     return {"message": "Hello, World!"}
 
+@app.get("/a")
+def home():
+    return {"Nhanh a!"}
