@@ -28,3 +28,7 @@ def update_item(item_id: int, item: dict):
 @app.put("/dat/{item_id}")
 def update_item(item_id: int, item: dict):
     return {"item_id": item_id, "item": item}
+
+@app.put("/items/{item_id}")
+def update_item(item_id: int, item: dict):
+    return {"item_id": item_id, "item": item}   
