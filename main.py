@@ -24,3 +24,4 @@ def delete_item(item_id: int):
 @app.put("/Dung/{item_id}")
 def update_item(item_id: int, item: dict):
     return {"item_id": item_id, "item": item}
+
